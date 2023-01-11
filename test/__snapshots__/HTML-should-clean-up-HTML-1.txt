@@ -1,0 +1,6 @@
+<div
+  class="foo"
+  data-other="bar"
+>
+  asdf
+</div>
