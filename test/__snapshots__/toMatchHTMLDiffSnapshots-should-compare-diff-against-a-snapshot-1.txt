@@ -1,0 +1,7 @@
+- <div class="foo-grandchild">
++ <div
++   class="foo-grandchild"
++   data-tested="tested"
++ >
+    Grandchild
+  </div>
