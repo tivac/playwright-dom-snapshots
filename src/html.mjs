@@ -1,10 +1,12 @@
+import { EOL } from "node:os";
+
 import diffableHTML from "diffable-html";
 import dedent from "dedent";
 
 const cleanHTML = (html) => diffableHTML(dedent(html))
 .trim()
 // Consistent line-endings are important
-.replace(/\n/g, "\r\n")
+.replace(/\r?\n/g, EOL)
 // The .replace removes some playwright locator gunk that slips in otherwise
 .replace(/\r?\n^\s*__playwright_target__.+$/m, "");
 
