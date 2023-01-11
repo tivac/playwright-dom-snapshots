@@ -4,8 +4,9 @@
   "type": "module",
   "description": "DOM snapshotting matchers & utilities for playwright",
   "scripts": {
+    "start": "vite --config ./test/vite.config.mjs",
     "test": "playwright test --config ./test/playwright.config.mjs",
-    "start": "vite --config ./test/vite.config.mjs"
+    "release": "changeset publish"
   },
   "keywords": [
     "playwright",
