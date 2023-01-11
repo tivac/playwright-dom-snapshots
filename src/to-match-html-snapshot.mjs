@@ -13,11 +13,12 @@ expect.extend({
 
 		const {
 			deep = true,
+			name,
 		} = args;
 
 		const dom = await getHTML(locator, { deep });
 
-		expect(dom).toMatchSnapshot(args);
+		expect(dom).toMatchSnapshot(name);
 
 		return {
 			pass : true,

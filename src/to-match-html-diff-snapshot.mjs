@@ -32,7 +32,9 @@ expect.extend({
 			"@@ --- --- @@"
 		);
 
-		expect(difference).toMatchSnapshot(args);
+		const { name } = args;
+
+		expect(difference).toMatchSnapshot(name);
 
 		return {
 			pass : true,
